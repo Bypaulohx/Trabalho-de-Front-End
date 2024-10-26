@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/Logo-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="cabeçalho">
+          <div class="logo">
+            <img src="/images/Logo.png" alt="logo" width=180>
+          </div>
+              <a href="#contato">Entre em contato</a>
+        </nav>
+      </header>
+    <main>
+        <section>
+            <h2>Sobre a mim</h2>
+            <p> Olá! Meu nome é <strong><Span>Paulos Henrique</Span></strong> eu pretendo aprender
+                <strong>JavaScript</strong>, que é uma linguagem de programação fundamental para o desenvolvimento web.
+                Além disso, quero estudar <em>Python</em>, que é ótima para ciência de dados e automação.
+                Por último, estou interessado em aprender <strong>React</strong>, uma biblioteca JavaScript para
+                construir interfaces de usuário.
+        </section>
+
+        <section class="trabalhos-feitos">
+            <h2>Trabalhos feitos</h2>
+            <div class="lista-trabalhos">
+                <div class="trabalhos">
+                    <a href="login/login.html" target="_blank"><img src="/images/php.png" alt="PHP" class="card-image"></a>
+                    <span class="categoria">PHP</span>
+                    <h3>Login em PHP</h3>
+                </div>
+
+                <div class="trabalhos">
+                    <img src="/images/react-native.png" alt="React Native" class="card-image">
+                    <span class="categoria">REACT</span>
+                    <h3>Website em React Native</h3>
+                </div>
+
+                <div class="trabalhos">
+                    <a href="Agritech Solutions e SoilSmart.pdf" target="_blank"><img src="/images/inteligencia-artificial.png" alt="IA" class="card-image"></a>
+                    <span class="categoria">INTELIGÊNCIA ARTIFICIAL</span>
+                    <h3>SoilSmart - IA da Agritech Solutions</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hobbies</h2>
+            <ol class="hobbies">
+                <li>Jogar</li>
+                <li>Ouvir Músicas</li>
+                <li>Dormir</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Series/Filmes</h2>
+            <ul class="series">
+                <a href="https://www.netflix.com/br/title/80057281">
+                    <li>Stranger Things</li>
+                </a>
+                <a href="https://www.netflix.com/br/title/80236318">
+                    <li>Outer Banks</li>
+                </a>
+                <a href="https://www.netflix.com/br/title/80994082">
+                    <li>Lupin</li>
+                </a>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <h2>Entre em contato</h2>
+
+            <div class="formulario">
+                <form action="#" method="post">
+                    <div class="input">
+                        <label for="nome">
+                            <span class="icone">👤</span>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </label>
+                    </div>
+            
+                    <div class="input">
+                        <label for="whatsapp">
+                            <span class="icone">🇧🇷</span>
+                            <input type="text" id="whatsapp" name="whatsapp" placeholder="Seu número de WhatsApp" required>
+                        </label>
+                    </div>
+            
+                    <div class="input">
+                        <label for="email">
+                            <span class="icone">✉️</span>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        </label>
+                    </div>
+            
+                    <button type="submit">ENVIAR ></button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados a <span>Paulo Henrique</span> </p>
+    </footer>
+</body>
+
+</html>
