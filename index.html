@@ -1,120 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Paulo Henrique: projetos de front-end, PHP e estudos em desenvolvimento web.">
+    <meta name="theme-color" content="#0d0d0d">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Paulo Henrique — Portfólio">
+    <meta property="og:description" content="Projetos de front-end, PHP e estudos em desenvolvimento web.">
+    <meta property="og:image" content="https://bypaulohx.github.io/Trabalho-de-Front-End/assets/images/Logo.png">
+    <meta property="og:url" content="https://bypaulohx.github.io/Trabalho-de-Front-End/">
+    <link rel="icon" href="assets/images/Logo-icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/Logo-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Paulo Henrique — Portfólio</title>
 </head>
+<body id="topo">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<body>
-    <header>
-        <nav class="cabeçalho">
-          <div class="logo">
-            <img src="/images/Logo.png" alt="logo" width=180>
-          </div>
-              <a href="#contato">Entre em contato</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Navegação principal">
+            <a class="brand" href="#topo" aria-label="Paulo Henrique, início">
+                <img src="assets/images/Logo.png" alt="Paulo Henrique" width="180">
+            </a>
+            <button type="button" class="menu-toggle" data-action="toggle-menu" aria-label="Abrir menu" aria-controls="nav-links" aria-expanded="false">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+                <a class="nav-github" href="https://github.com/Bypaulohx" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </nav>
-      </header>
-    <main>
-        <section>
-            <h2>Sobre a mim</h2>
-            <p> Olá! Meu nome é <strong><Span>Paulos Henrique</Span></strong> eu pretendo aprender
-                <strong>JavaScript</strong>, que é uma linguagem de programação fundamental para o desenvolvimento web.
-                Além disso, quero estudar <em>Python</em>, que é ótima para ciência de dados e automação.
-                Por último, estou interessado em aprender <strong>React</strong>, uma biblioteca JavaScript para
-                construir interfaces de usuário.
-        </section>
+    </header>
 
-        <section class="trabalhos-feitos">
-            <h2>Trabalhos feitos</h2>
-            <div class="lista-trabalhos">
-                <div class="trabalhos">
-                    <a href="login/login.html" target="_blank"><img src="/images/php.png" alt="PHP" class="card-image"></a>
-                    <span class="categoria">PHP</span>
-                    <h3>Login em PHP</h3>
+    <main id="conteudo">
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Olá, eu sou</p>
+                <h1 id="hero-title">Paulo Henrique</h1>
+                <p class="hero-lead">Estudo desenvolvimento web e estou construindo minha trajetória na área. Já pratiquei HTML, CSS e PHP e agora estou avançando em JavaScript, Python e React.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">Ver projetos</a>
+                    <a class="button button-outline" href="#contato">Entrar em contato</a>
                 </div>
-
-                <div class="trabalhos">
-                    <img src="/images/react-native.png" alt="React Native" class="card-image">
-                    <span class="categoria">REACT</span>
-                    <h3>Website em React Native</h3>
+            </div>
+            <div class="hero-panel" aria-hidden="true">
+                <div class="panel-bar">
+                    <span></span><span></span><span></span>
+                    <small>sobre-mim.js</small>
                 </div>
-
-                <div class="trabalhos">
-                    <a href="Agritech Solutions e SoilSmart.pdf" target="_blank"><img src="/images/inteligencia-artificial.png" alt="IA" class="card-image"></a>
-                    <span class="categoria">INTELIGÊNCIA ARTIFICIAL</span>
-                    <h3>SoilSmart - IA da Agritech Solutions</h3>
+                <pre><code><span class="code-key">const</span> Paulo = {
+  foco: <span class="code-string">'front-end'</span>,
+  estudando: [<span class="code-string">'JavaScript'</span>, <span class="code-string">'Python'</span>],
+  proximo: <span class="code-string">'React'</span>
+}</code></pre>
+                <div class="panel-tags">
+                    <span>HTML</span><span>CSS</span><span>PHP</span>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Hobbies</h2>
-            <ol class="hobbies">
-                <li>Jogar</li>
-                <li>Ouvir Músicas</li>
-                <li>Dormir</li>
-            </ol>
+        <section class="section container" id="sobre" aria-labelledby="sobre-title">
+            <p class="eyebrow">Um pouco sobre mim</p>
+            <h2 id="sobre-title">Sobre mim</h2>
+            <div class="about-grid">
+                <p> Comecei pelo front-end e descobri que gosto de transformar ideias em interfaces que funcionam. Cada projeto aqui é parte do que já aprendi e do que ainda estou estudando.</p>
+                <ul class="skill-list">
+                    <li>
+                        <i class="bi bi-braces" aria-hidden="true"></i>
+                        <div><strong>JavaScript</strong><span>Lógica e interatividade</span></div>
+                    </li>
+                    <li>
+                        <i class="bi bi-terminal" aria-hidden="true"></i>
+                        <div><strong>Python</strong><span>Automação e ciência de dados</span></div>
+                    </li>
+                    <li>
+                        <i class="bi bi-hexagon" aria-hidden="true"></i>
+                        <div><strong>React</strong><span>Interfaces em componentes</span></div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Series/Filmes</h2>
-            <ul class="series">
-                <a href="https://www.netflix.com/br/title/80057281">
-                    <li>Stranger Things</li>
-                </a>
-                <a href="https://www.netflix.com/br/title/80236318">
-                    <li>Outer Banks</li>
-                </a>
-                <a href="https://www.netflix.com/br/title/80994082">
-                    <li>Lupin</li>
-                </a>
+        <section class="section container" id="projetos" aria-labelledby="projetos-title">
+            <p class="eyebrow">O que já fiz</p>
+            <h2 id="projetos-title">Trabalhos feitos</h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section class="section container" id="hobbies" aria-labelledby="hobbies-title">
+            <p class="eyebrow">Fora do código</p>
+            <h2 id="hobbies-title">Hobbies</h2>
+            <ul class="hobby-list">
+                <li><i class="bi bi-controller" aria-hidden="true"></i> Jogar</li>
+                <li><i class="bi bi-music-note-beamed" aria-hidden="true"></i> Ouvir músicas</li>
+                <li><i class="bi bi-moon-stars" aria-hidden="true"></i> Dormir</li>
             </ul>
         </section>
 
-        <hr>
+        <section class="section container" id="series" aria-labelledby="series-title">
+            <p class="eyebrow">Na minha lista</p>
+            <h2 id="series-title">Séries e filmes</h2>
+            <ul class="media-list" id="series-list"></ul>
+        </section>
 
-        <section id="contato">
-            <h2>Entre em contato</h2>
+        <hr class="section-divider container">
 
-            <div class="formulario">
-                <form action="#" method="post">
-                    <div class="input">
-                        <label for="nome">
-                            <span class="icone">👤</span>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                        </label>
+        <section class="section container" id="contato" aria-labelledby="contato-title">
+            <div class="contact-layout">
+                <div>
+                    <p class="eyebrow">Vamos conversar</p>
+                    <h2 id="contato-title">Entre em contato</h2>
+                    <p class="contact-intro">Tem uma ideia, uma dúvida ou só quer falar sobre desenvolvimento? Deixe seus dados e eu respondo assim que puder.</p>
+                    <a class="contact-link" href="https://github.com/Bypaulohx" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                        Ver outros projetos no GitHub
+                    </a>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="field">
+                        <label class="sr-only" for="nome">Seu nome completo</label>
+                        <i class="bi bi-person" aria-hidden="true"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
                     </div>
-            
-                    <div class="input">
-                        <label for="whatsapp">
-                            <span class="icone">🇧🇷</span>
-                            <input type="text" id="whatsapp" name="whatsapp" placeholder="Seu número de WhatsApp" required>
-                        </label>
+                    <div class="field">
+                        <label class="sr-only" for="whatsapp">Seu número de WhatsApp</label>
+                        <i class="bi bi-telephone" aria-hidden="true"></i>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu número de WhatsApp" autocomplete="tel" required>
                     </div>
-            
-                    <div class="input">
-                        <label for="email">
-                            <span class="icone">✉️</span>
-                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                        </label>
+                    <div class="field">
+                        <label class="sr-only" for="email">Seu e-mail</label>
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required>
                     </div>
-            
-                    <button type="submit">ENVIAR ></button>
+                    <button type="submit" class="button button-primary">Enviar mensagem</button>
                 </form>
             </div>
-
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 - Todos os direitos reservados a <span>Paulo Henrique</span> </p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Todos os direitos reservados a <strong>Paulo Henrique</strong>.</p>
+            <a href="#topo">Voltar ao topo <i class="bi bi-arrow-up" aria-hidden="true"></i></a>
+        </div>
     </footer>
-</body>
 
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="js/data.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
+</body>
 </html>
